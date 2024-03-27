@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
 
-describe('Work with alerts', ()=>{
+describe('Testes funcionais', ()=>{
 
     before(()=>{
         cy.visit('https://barrigareact.wcaquino.me')
@@ -56,9 +56,6 @@ describe('Work with alerts', ()=>{
 
     it('Cálculo de saldo', ()=>{
         cy.xpath('//a[@data-test="menu-home"]').click()
-        //cy.xpath('//td[contains(.,"Conta Alterada")]/following-sibling::td"]',{timeout: 10000}).should('exist')
-        //cy.xpath('//td[contains(.,"Conta Alterada")]/following-sibling::td"]',{timeout: 10000}).should('not.exist')
-        //cy.wait(5000)
         cy.xpath('//td[contains(., "Conta Alterada")]/following-sibling::td',{timeout: 10000}).then(($td1)=>{
             
             cy.xpath('//b/../following-sibling::td',{timeout: 10000}).then(($td2)=>{

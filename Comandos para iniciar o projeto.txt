@@ -1,0 +1,12 @@
+Comandos para iniciar o projeto
+
+- Após criar a pasta do projeto
+- npm init -y
+- npm install cypress@3.6.0
+- Editar arquivo package.json adicionando o script "cypress:open": "cypress open"
+- instalar o cypress xpath
+- npm install cypress-xpath
+- no arquivo package.json adicionar a dependencia "cypress-xpath": "^2.0.1"
+- no arquivo cypress/support/index.js adicionar require('cypress-xpath')
+
+<div class="toast-top-right" id="toast-container" aria-live="polite" role="alert"></div>
